@@ -1,6 +1,7 @@
 from classe_complexe.ClasseComplexe import *
 import pytest
 
+
 # creation et affichage
 @pytest.mark.parametrize(
     "a, b, affichage",
@@ -61,6 +62,7 @@ def test_multiplication(cache, produit1, produit2):
     assert str(nombre1 * nombre2) == produit1
     assert str(nombre1 * 0.5) == produit2
 
+
 # conjugaison
 @pytest.mark.parametrize(
     "conjugue",
@@ -72,6 +74,7 @@ def test_conjugaison(cache, conjugue):
     print("\nTest de la conjugaison")
     nombre = NombreComplexe(14.5, -8)
     assert str(nombre.conjugaison_complexe()) == conjugue
+
 
 # division
 @pytest.mark.parametrize(

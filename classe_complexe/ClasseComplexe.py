@@ -84,7 +84,6 @@ class NombreComplexe:
             else:  # si la partie imaginaire est negative
                 signe = "-"
         forme_algebrique = str(self.partie_reelle) + " " + signe + " i" + str(abs(self.partie_imaginaire))
-        # f"{self.partie_reelle} {signe} i{abs(self.partie_imaginaire)}"
         return forme_algebrique
 
 
